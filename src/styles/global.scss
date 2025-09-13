@@ -1,0 +1,66 @@
+// GLOBAL IMPORTS START
+@use './variables' as *;
+@use './mixins' as *;
+@use './components/hero';
+@use './components/animated-features';
+@use './components/loading-screen';
+
+// GLOBALS START
+/* CSS Reset (lightweight) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family-sans;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background: $color-bg;
+  color: $color-text;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $color-border;
+  margin-block: $space-6;
+}
+
+/* App-level helpers */
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  @include container();
+  padding-block: $space-8;
+}
+
+/* Component partials (imported in later steps) */
+// @use './components/animated-features';

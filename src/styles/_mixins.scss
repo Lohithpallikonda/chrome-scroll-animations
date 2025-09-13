@@ -1,0 +1,16 @@
+// MIXINS START
+@use './variables' as *;
+
+@mixin container($max: $container-max) {
+  width: min(100% - 2rem, $max);
+  margin-inline: auto;
+}
+
+@mixin visually-hidden() {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
