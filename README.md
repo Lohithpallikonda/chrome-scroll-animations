@@ -1,4 +1,4 @@
-# Huemn Interactive — Scroll‑Driven Animations
+# Chrome Scroll Animations
 
 Recreation of Chrome homepage–style, scroll‑scrubbed feature animations using React, SCSS, and GSAP with a sticky pinned stage. Four scenes animate in sequence while the user scrolls.
 
@@ -22,7 +22,8 @@ Prereqs: Node 20+, npm 10+ (Windows + PowerShell)
 
 Install deps:
 ```powershell
-cd "c:\Users\lohit\OneDrive\Desktop\new project\huemn-interactive"
+git clone https://github.com/Lohithpallikonda/chrome-scroll-animations.git
+cd chrome-scroll-animations
 npm install
 ```
 

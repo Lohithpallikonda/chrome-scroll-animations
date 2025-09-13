@@ -51,7 +51,7 @@ export default function LoadingScreen({ onComplete }) {
             <div className="chrome-logo__ring chrome-logo__ring--green"></div>
           </div>
         </div>
-        <p ref={textRef} className="loading-screen__text">Huemn Interactive</p>
+        <p ref={textRef} className="loading-screen__text">Chrome Animations</p>
       </div>
     </div>
   );
